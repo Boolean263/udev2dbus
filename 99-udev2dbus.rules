@@ -1,0 +1,3 @@
+ACTION=="add",    RUN+="/bin/bash /usr/local/bin/udev2dbus.sh -a add    -p '%p' -b '$attr{busnum}' -d '$devnode'"
+ACTION=="remove", RUN+="/bin/bash /usr/local/bin/udev2dbus.sh -a remove -p '%p' -b '$attr{busnum}' -d '$devnode'"
+
